@@ -6,17 +6,17 @@ return [
         'default_locale' => 'es'
     ],
     'mail' => [
-        'host' => 'mail.kazabeluxury.com',
+        'host' => '',
         'port' => '587',
         'from' => [
-            'name' => 'Kazabe Luxury',
-            'address' => 'no-reply@kazabeluxury.com'
+            'name' => '',
+            'address' => ''
         ],
-        'username' => 'no-reply@kazabeluxury.com',
-        'password' => '!MZM[UH?Pk$O'
+        'username' => '',
+        'password' => ''
     ],
     'captcha' => [
-        'frontend_code' => '6LdDXbgUAAAAAPEzP_qxD2dFpnAhsndzbq2C3WoO',
-        'security_code' => '6LdDXbgUAAAAAIG9XDExoFP07piOhQ-e2KkiM1AQ'
+        'frontend_code' => '',
+        'security_code' => ''
     ]
 ];
