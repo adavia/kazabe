@@ -1,0 +1,96 @@
+{% import 'macros/forms.html' as forms %}
+
+<footer id="contact" class="bg-primary mt-16">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-wrap py-16 -mb-4 -mx-2">
+            <div class="w-full lg:w-1/2 mb-4 px-2">
+                <h2 class="font-bold uppercase border-b-2 text-white text-3xl pb-4 mb-6">
+                    {{ trans('ui.headers.contact') }}</h2>
+                <p class="text-white text-xl">
+                    {{ trans('ui.contact.text') }}
+                </p>
+            </div>
+            <div class="w-full lg:w-1/2 mb-4 px-2">
+                <form class="shadow-md bg-white rounded md:w-11/12 
+                    max-w-2xl mx-auto px-8 pt-6 pb-8" method="POST" action="{{ url_for('contact') }}">
+                    {% include 'components/flash.html' %}
+                    {{ csrf() | raw }}
+                    <div class="flex flex-wrap -mx-3 mb-5">
+                        <div class="w-full px-3">
+                            {{ forms.input(
+                                'name', 
+                                'name', 
+                                trans('ui.form.name.label'),
+                                trans('ui.form.name.placeholder'),
+                                field.name,
+                                errors.name) 
+                            }}
+                            {% if errors.name %}
+                            <span class="text-base text-red-600">{{ errors.name | first }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-5">
+                        <div class="w-full px-3">
+                            {{ forms.input(
+                                'email', 
+                                'email', 
+                                trans('ui.form.email.label'),
+                                trans('ui.form.email.placeholder'),
+                                field.email,
+                                errors.email) 
+                            }}
+                            {% if errors.email %}
+                            <span class="text-base text-red-600">{{ errors.email | first }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-5">
+                        <div class="w-full px-3">
+                            {{ forms.text(
+                                'message', 
+                                'message', 
+                                trans('ui.form.message.label'),
+                                trans('ui.form.message.placeholder'),
+                                field.message,
+                                errors.message) 
+                            }}
+                            {% if errors.message %}
+                            <span class="text-base text-red-600">{{ errors.message | first }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-5">
+                        <div class="w-full px-3">
+                            <div class="g-recaptcha" data-sitekey="{{captcha}}"></div>
+                        </div>
+                    </div>
+                    <button class="bg-primary hover:bg-white hover:text-gray-500 
+                        hover:shadow text-white text-xl
+                        font-bold py-2 px-4 rounded focus:outline-none
+                        focus:shadow-outline" type="submit">
+                        {{ trans('ui.form.button') }}
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap -mx-2 -mb-4 py-6">
+                <div class="w-full lg:w-1/4 text-white font-bold mb-4 lg:mb-0 px-2">
+                    Centro, Edificio Bombay Oficina 302
+                </div>
+                <div class="w-full lg:w-1/4 text-white font-bold mb-4 lg:mb-0 px-2">
+                    info@kazabeluxury.com
+                </div>
+                <div class="w-full lg:w-1/4 text-white font-bold mb-4 lg:mb-0 px-2">
+                    Cel: +57 3006658401
+                </div>
+                <div class="w-full lg:w-1/4 text-white font-bold px-2">
+                    Tel: +57 5 6902769
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

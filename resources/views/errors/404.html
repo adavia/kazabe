@@ -1,0 +1,14 @@
+{% extends 'layouts/error.html' %}
+{% block title %} {{ trans('ui.title') }} {% endblock title %}
+
+{% block content %}
+    <div class="relative h-screen bg-transparent-light">
+        <figure class="absolute inset-0 flex items-center justify-center">
+            <div>
+                <img src="/images/white_logo.png" class="w-64 m-auto" alt="Logo Kazabe">
+                <h1 class="text-white text-center text-4xl font-bold mt-6 mb-4">{{ trans('ui.404') }}</h1>
+                <a class="text-white text-center text-xl" href="{{ url_for('home') }}">&#8594; {{ trans('ui.404-link') }}</a>
+            </div>
+        </figure>
+    </div>
+{% endblock content %}

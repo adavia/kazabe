@@ -1,0 +1,9 @@
+{% set locales = {'en': 'EN', 'es': 'ES'} %}
+
+{% for locale, name in locales %}
+    {% if locale() != locale %}
+        <li class="border-t md:border-none">
+            <a href="/translate/{{locale}}" class="nav-link hover:text-gray-300 pl-4 py-3">{{name}}</a>
+        </li>
+    {% endif %}
+{% endfor %}

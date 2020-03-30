@@ -1,0 +1,178 @@
+{% extends 'layouts/base.html' %}
+{% block title %} {{ trans('ui.title') }} {% endblock title %}
+
+{% block content %}
+<section class="container mx-auto px-6">
+    <h1 id="about" class="font-bold uppercase text-primary text-5xl text-center mt-16 mb-12">{{ trans('ui.headers.about') }}</h1>
+    <div class="grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-12">
+        <div class="rounded overflow-hidden shadow-lg transition duration-300 ease-in-out transform">
+            <img class="w-full" src="/images/crew_1.jpg" alt="Vision for 2022">
+            <div class="px-6 py-4">
+                <div class="text-primary font-bold text-3xl mb-2">{{ trans('ui.history.vision.title') }}</div>
+                <p class="text-lg text-gray-700">
+                    {{ trans('ui.history.vision.text') }}
+                </p>
+            </div>
+        </div>
+        <div class="rounded overflow-hidden shadow-lg transition duration-300 ease-in-out transform">
+            <img class="w-full" src="/images/crew_2.jpg" alt="About us">
+            <div class="px-6 py-4">
+                <div class="text-primary font-bold text-3xl mb-2">{{ trans('ui.history.about.title') }}</div>
+                <p class="text-lg text-gray-700">
+                    {{ trans('ui.history.about.text') }}
+                </p>
+            </div>
+        </div>
+        <div class="rounded overflow-hidden shadow-lg transition duration-300 ease-in-out transform">
+            <img class="w-full" src="/images/crew_3.jpg" alt="Our mission">
+            <div class="px-6 py-4">
+                <div class="text-primary font-bold text-3xl mb-2">{{ trans('ui.history.mission.title') }}</div>
+                <p class="text-lg text-gray-700">
+                    {{ trans('ui.history.mission.text') }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container mx-auto px-6">
+    <h1 id="services" class="font-bold uppercase text-primary text-5xl text-center mt-16 mb-12">{{ trans('ui.headers.services') }}</h1>
+    <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
+        <figure class="relative rounded-md overflow-hidden">
+            <img src="/images/service_1.jpg" class="shadow-xl object-cover w-full h-full" alt="City tour">
+            <h2 class="absolute left-0 top-0 bg-transparent-dark font-bold text-white text-xl py-2 px-4">{{ trans('ui.services.city_tour.title') }}</h2>
+            <p class="absolute inset-x-0 bottom-0 bg-transparent-dark text-white text-lg p-4">
+                {{ trans('ui.services.city_tour.text') }}
+            </p>
+        </figure>
+        <figure class="relative rounded-md overflow-hidden">
+            <img src="/images/service_2.jpg" class="shadow-xl object-cover w-full h-full" alt="Walking tour">
+            <h2 class="absolute left-0 top-0 bg-transparent-dark font-bold text-white text-xl py-2 px-4">{{ trans('ui.services.walking_tour.title') }}</h2>
+            <p class="absolute inset-x-0 bottom-0 bg-transparent-dark text-white text-lg p-4">
+                {{ trans('ui.services.walking_tour.text') }}
+            </p>
+        </figure>
+        <figure class="relative rounded-md overflow-hidden">
+            <img src="/images/service_3.jpg" class="shadow-xl object-cover w-full h-full" alt="Mangroves">
+            <h2 class="absolute left-0 top-0 bg-transparent-dark font-bold text-white text-xl py-2 px-4">{{ trans('ui.services.mangroves.title') }}</h2>
+            <p class="absolute inset-x-0 bottom-0 bg-transparent-dark text-white text-lg p-4">
+                {{ trans('ui.services.mangroves.text') }}
+            </p>
+        </figure>
+        <figure class="relative rounded-md overflow-hidden">
+            <img src="/images/service_4.jpg" class="shadow-xl object-cover w-full h-full" alt="Artisanal Fishing">
+            <h2 class="absolute left-0 top-0 bg-transparent-dark font-bold text-white text-xl py-2 px-4">{{ trans('ui.services.fishing.title') }}</h2>
+            <p class="absolute inset-x-0 bottom-0 bg-transparent-dark text-white text-lg p-4">
+                {{ trans('ui.services.fishing.text') }}
+            </p>
+        </figure>
+        <figure class="relative rounded-md overflow-hidden">
+            <img src="/images/service_5.jpg" class="shadow-xl object-cover w-full h-full" alt="Architectural Tour">
+            <h2 class="absolute left-0 top-0 bg-transparent-dark font-bold text-white text-xl py-2 px-4">{{ trans('ui.services.architectural.title') }}</h2>
+            <p class="absolute inset-x-0 bottom-0 bg-transparent-dark text-white text-lg p-4">
+                {{ trans('ui.services.architectural.text') }}
+            </p>
+        </figure>
+        <figure class="relative rounded-md overflow-hidden">
+            <img src="/images/service_6.jpg" class="shadow-xl object-cover w-full h-full" alt="Art Tour">
+            <h2 class="absolute left-0 top-0 bg-transparent-dark font-bold text-white text-xl py-2 px-4">{{ trans('ui.services.art.title') }}</h2>
+            <p class="absolute inset-x-0 bottom-0 bg-transparent-dark text-white text-lg p-4">
+                {{ trans('ui.services.art.text') }}
+            </p>
+        </figure>
+        <figure class="relative rounded-md overflow-hidden">
+            <img src="/images/service_7.jpg" class="shadow-xl object-cover w-full h-full" alt="Dance Lessons">
+            <h2 class="absolute left-0 top-0 bg-transparent-dark font-bold text-white text-xl py-2 px-4">{{ trans('ui.services.dance.title') }}</h2>
+            <p class="absolute inset-x-0 bottom-0 bg-transparent-dark text-white text-lg p-4">
+                {{ trans('ui.services.dance.text') }}
+            </p>
+        </figure>
+        <figure class="relative rounded-md overflow-hidden">
+            <img src="/images/service_8.jpg" class="shadow-xl object-cover w-full h-full" alt="Palenque">
+            <h2 class="absolute left-0 top-0 bg-transparent-dark font-bold text-white text-xl py-2 px-4">{{ trans('ui.services.palenque.title') }}</h2>
+            <p class="absolute inset-x-0 bottom-0 bg-transparent-dark text-white text-lg p-4">
+                {{ trans('ui.services.palenque.text') }}
+            </p>
+        </figure>
+    </div>
+</section>
+<section class="container mx-auto px-6">
+    <h1 id="stories" class="font-bold uppercase text-primary text-5xl text-center mt-16 mb-12">{{ trans('ui.headers.histories') }}</h1>
+    <div class="paper">
+        <div class="w-full lg:max-w-full lg:flex lg:items-center mb-12">
+            <div class="h-48 lg:w-48 flex-none bg-cover rounded-t lg:rounded-full text-center overflow-hidden"
+                style="background-image: url('/images/story_1.jpg')" title="The best experience in the Colombian Caribbean">
+            </div>
+            <div
+                class="border-r border-b border-l border-gray-400 lg:border-none bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                <div class="mb-8">
+                    <div class="text-primary font-bold text-2xl mb-2">{{ trans('ui.stories.angel.title') }}</div>
+                    <p class="text-gray-700 text-lg mb-2">
+                        {{ trans('ui.stories.angel.text') }}
+                    </p>
+                    <p class="text-gray-900 leading-none">Angel Castro</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full lg:max-w-full lg:flex lg:items-center lg:flex-row-reverse mb-12">
+            <div class="h-48 lg:w-48 flex-none bg-cover rounded-t lg:rounded-full text-center overflow-hidden"
+                style="background-image: url('/images/story_2.jpg')" title="First level attention and comfort">
+            </div>
+            <div
+                class="border-r border-b border-l border-gray-400 lg:border-none bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                <div class="mb-8">
+                    <div class="text-primary font-bold text-2xl mb-2">{{ trans('ui.stories.marta.title') }}</div>
+                    <p class="text-gray-700 text-lg mb-2">
+                        {{ trans('ui.stories.marta.text') }}
+                    </p>
+                    <p class="text-gray-900 leading-none">Marta Soria</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full lg:max-w-full lg:flex lg:items-center">
+            <div class="h-48 lg:w-48 flex-none bg-cover rounded-t lg:rounded-full text-center overflow-hidden"
+                style="background-image: url('/images/story_3.jpg')" title="A unique experience to live as a family">
+            </div>
+            <div
+                class="border-r border-b border-l border-gray-400 lg:border-none bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                <div class="mb-8">
+                    <div class="text-primary font-bold text-2xl mb-2">{{ trans('ui.stories.kate.title') }}</div>
+                    <p class="text-gray-700 text-lg mb-2">
+                        {{ trans('ui.stories.kate.text') }}
+                    </p>
+                    <p class="text-gray-900 leading-none">Kate Hudson</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container mx-auto px-6">
+    <h1 class="font-bold uppercase text-primary text-5xl text-center mt-16 mb-12">{{ trans('ui.headers.gallery') }}</h1>
+    <div class="ig-gallery grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-1"></div>
+</section>
+<section class="container mx-auto px-6">
+    <h1 id="team" class="font-bold uppercase text-primary text-5xl text-center mt-16 mb-12">{{ trans('ui.headers.team') }}</h1>
+    <div class="grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+        <figure class="relative rounded-md overflow-hidden">
+            <img src="/images/team_1.jpeg" class="shadow-xl object-cover w-full h-full" alt="David García">
+            <h2 class="absolute top-0 right-0 bg-transparent-dark font-bold text-white text-xl py-2 px-4">David García</h2>
+            <p class="absolute inset-x-0 bottom-0 bg-transparent-dark text-white text-base p-4">
+                {{ trans('ui.team.david.text') }}
+            </p>
+        </figure>
+        <figure class="relative rounded-md overflow-hidden">
+            <img src="/images/team_2.jpeg" class="shadow-xl object-cover w-full h-full" alt="Hisnardo Buelvas">
+            <h2 class="absolute top-0 right-0 bg-transparent-dark font-bold text-white text-xl py-2 px-4">Hisnardo Buelvas</h2>
+            <p class="absolute inset-x-0 bottom-0 bg-transparent-dark text-white text-base p-4">
+                {{ trans('ui.team.hisnardo.text') }}
+            </p>
+        </figure>
+        <figure class="relative rounded-md overflow-hidden">
+            <img src="/images/team_3.jpeg" class="shadow-xl object-cover w-full h-full" alt="Carolina Santamaría">
+            <h2 class="absolute top-0 right-0 bg-transparent-dark font-bold text-white text-xl py-2 px-4">Carolina Santamaría</h2>
+            <p class="absolute inset-x-0 bottom-0 bg-transparent-dark text-white text-base p-4">
+                {{ trans('ui.team.carolina.text') }}
+            </p>
+        </figure>
+    </div>
+</section>
+{% endblock content %}

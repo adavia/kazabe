@@ -1,0 +1,24 @@
+{
+    "name": "kazabe",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "dev": "npx parcel watch public/src/js/app.js -d public/dist",
+        "build": "npx parcel build public/src/js/app.js -d public/dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^2.1.0",
+        "autoprefixer": "^9.7.4",
+        "cssnano": "^4.1.10",
+        "parcel-bundler": "^1.12.4",
+        "postcss-modules": "^1.5.0",
+        "tailwindcss": "^1.2.0"
+    },
+    "dependencies": {
+        "jquery": "^3.4.1",
+        "swiper": "^5.3.6"
+    }
+}
